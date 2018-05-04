@@ -1,5 +1,5 @@
 var n = 0;
-var c = 4;
+var c = 7;
 
 function setup() {
   createCanvas(400, 400);
@@ -12,15 +12,21 @@ function setup() {
 
 function draw() {
 
-  var a = n * 137.5;
+  var a = n * 137;
   var r = c * sqrt(n);
 
   var x = r * cos(a) + width / 2;
   var y = r * sin(a) + height / 2;
 
-  fill(n^2 + 256, 255, 255);
   noStroke();
-  ellipse(x, y, 3, 3);
+  ellipseMode(RADIUS);
+  fill(n^4 + 256, 255, 255);
+  ellipse(x, y, 5, 5, );
+
+  ellipseMode(CENTER);
+  fill(100);
+  ellipse(x, y, 2, 2);
+
   n++;
 
 
