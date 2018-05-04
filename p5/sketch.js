@@ -2,7 +2,7 @@ var n = 0;
 var c = 7;
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(600, 600);
 
   angleMode(DEGREES);
   colorMode(HSB);
