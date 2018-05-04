@@ -3,10 +3,10 @@ var c = 4;
 
 function setup() {
   createCanvas(400, 400);
+
   angleMode(DEGREES);
   colorMode(HSB);
   background (0);
-
 
 }
 
@@ -18,9 +18,10 @@ function draw() {
   var x = r * cos(a) + width / 2;
   var y = r * sin(a) + height / 2;
 
-  fill(n % 256, 255, 255);
+  fill(n^2 + 256, 255, 255);
   noStroke();
-  ellipse(x, y, 1, 4);
+  ellipse(x, y, 3, 3);
   n++;
+
 
 }
